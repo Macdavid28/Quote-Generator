@@ -1,16 +1,18 @@
 body {
-  background-color: royalblue;
+  background-color: #fff;
 }
 .title {
-  color: #fff;
+  color: royalblue;
   text-decoration: underline;
   padding: 30px;
+  font-family: "Lobster";
 }
 .quote .house {
   width: 50%;
   border-radius: 12px;
-  border: 3px solid white;
+  border: 3px solid black;
   position: absolute;
+  background-color: royalblue;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -19,12 +21,15 @@ body {
 .house .content {
   font-family: "Lobster";
   font-style: normal;
+  color: black;
   font-weight: 400;
 }
 .author {
-  font-family: "Dancing Script",cursive;
+  font-family: "Dancing Script", cursive;
   font-size: 30px;
   text-align: right;
+  padding-top: 20px;
+  color: white;
 }
 .btn {
   width: 25%;
@@ -37,5 +42,5 @@ body {
   cursor: pointer;
 }
 .par {
-  border: 1px solid white;
+  border: 1px solid black;
 }
