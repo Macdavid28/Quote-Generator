@@ -1,0 +1,41 @@
+body {
+  background-color: royalblue;
+}
+.title {
+  color: #fff;
+  text-decoration: underline;
+  padding: 30px;
+}
+.quote .house {
+  width: 50%;
+  border-radius: 12px;
+  border: 3px solid white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+.house .content {
+  font-family: "Lobster";
+  font-style: normal;
+  font-weight: 400;
+}
+.author {
+  font-family: "Dancing Script",cursive;
+  font-size: 30px;
+  text-align: right;
+}
+.btn {
+  width: 25%;
+  padding: 10px;
+  margin: auto;
+  border: none;
+  font-family: "Dancing Script";
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.par {
+  border: 1px solid white;
+}

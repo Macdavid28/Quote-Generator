@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "Hello World",
+      "body": "Why must we use it in our first code",
+      "author": "marty alencar",
+      "id": 1
+    },
+    {
+      "title": "Wazah",
+      "body": "Why must we use it in our greetings",
+      "author": "Jared Scott",
+      "id": 2
+    }
+  ]
+}
