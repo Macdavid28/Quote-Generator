@@ -1,6 +1,13 @@
 body {
   background-color: #fff;
 }
+.custom-box {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  /* Add more styles as needed */
+}
 .title {
   color: royalblue;
   text-decoration: underline;
