@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./quote.css";
-import Yasak from "./Card";
 const Quote = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
@@ -24,7 +23,6 @@ const Quote = () => {
   };
   return (
     <div className="quote">
-      <Yasak />
       <h1 className="title "> Random Quote Generator </h1>
       <div className="house">
         <h1 className="content"> {quote} </h1>
