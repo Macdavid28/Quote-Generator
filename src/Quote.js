@@ -4,7 +4,7 @@ const Quote = () => {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
   useEffect(() => {
-    fetch("https://api.quotable.io/random")
+    fetch("http://api.quotable.io/random")
       .then((res) => res.json())
       .then((data) => {
         setQuote(data.content);
@@ -13,7 +13,7 @@ const Quote = () => {
       });
   }, []);
   const showQuoteHandler = () => {
-    fetch("https://api.quotable.io/random")
+    fetch("http://api.quotable.io/random")
       .then((res) => res.json())
       .then((data) => {
         setQuote(data.content);
@@ -23,10 +23,10 @@ const Quote = () => {
   };
   return (
     <div className="quote">
-      <h1 className="title "> Random Quote Generator </h1>
-      <div className="house">
-        <h1 className="content"> {quote} </h1>
-        <div className="par"></div>
+      <h1 className="quote-title "> Random Quote Generator </h1>
+      <div className="quote-container">
+        <h1 className="quote-content"> {quote} </h1>
+        <div className="line"></div>
         <h1 className="author"> {author} </h1>
         <button onClick={showQuoteHandler} className="btn">
           Generate Quote
