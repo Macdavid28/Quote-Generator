@@ -1,43 +1,30 @@
 body {
-  background-color: #fff;
+  background-color: royalblue;
 }
-.custom-box {
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: #f8f9fa;
-  /* Add more styles as needed */
-}
-.title {
-  color: royalblue;
+.quote-title {
+  color: #fff;
   text-decoration: underline;
   padding: 30px;
-  font-family: "Lobster";
-  /* position: fixed; */
 }
-.quote .house {
+.quote .quote-container {
   width: 50%;
   border-radius: 12px;
-  border: 3px solid black;
+  border: 3px solid white;
   position: absolute;
-  background-color: royalblue;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 30px;
 }
-.house .content {
+.quote-container .quote-content {
   font-family: "Lobster";
   font-style: normal;
-  color: black;
   font-weight: 400;
 }
 .author {
   font-family: "Dancing Script", cursive;
   font-size: 30px;
   text-align: right;
-  padding-top: 15px;
-  color: white;
 }
 .btn {
   width: 25%;
@@ -49,114 +36,58 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.par {
-  border: 1px solid black;
+.line {
+  border: 1px solid white;
 }
-
-/* Base styles */
-body {
-  background-color: #fff;
+@media (max-width: 1024px) {
+  .quote .quote-container {
+    width: 80%;
+  }
+  .line {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 }
-
-.title {
-  color: royalblue;
-  text-decoration: underline;
-  padding: 30px;
-  font-family: "Lobster";
-}
-
-.quote .house {
-  width: 50%;
-  border-radius: 12px;
-  border: 3px solid black;
-  position: absolute;
-  background-color: royalblue;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 30px;
-}
-
-.house .content {
-  font-family: "Lobster";
-  font-style: normal;
-  color: black;
-  font-weight: 400;
-}
-
-.author {
-  font-family: "Dancing Script", cursive;
-  font-size: 30px;
-  text-align: right;
-  padding-top: 20px;
-  color: white;
-}
-
-.btn {
-  width: 25%;
-  padding: 10px;
-  margin: auto;
-  border: none;
-  font-family: "Dancing Script";
-  font-size: 20px;
-  border-radius: 5px;
-  /* margin-top: 10px; */
-  cursor: pointer;
-}
-
-.par {
-  border: 1px solid black;
-}
-
-/* Media query for smaller screens */
-@media screen and (max-width: 1024px) {
-  .quote .house {
+@media (max-width: 430px) {
+  .quote .quote-container {
     width: 80%;
     padding: 20px;
-    font-size: 30px;
   }
-
+  .quote-content {
+    font-size: 25px;
+  }
   .btn {
-    width: 40%;
-    font-size: 30px;
+    width: 50%;
+    margin-top: 20px;
+  }
+  .line {
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 }
-@media screen and (max-width: 768px) {
-  .quote .house {
-    width: 70%;
-    padding: 20px;
+@media (max-width: 380px) {
+  .quote-container {
+    margin-top: 30px;
   }
-
-  .btn {
-    width: 80%;
-    font-size: 16px;
+  .quote-content {
+    font-size: 20px;
   }
 }
-
-/* Media query for even smaller screens */
-@media screen and (max-width: 480px) {
-  .quote .house {
-    width: 90%;
-    padding: 15px;
-  }
-
-  .btn {
-    width: 60%;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .quote .house {
-    width: 85%;
+@media (max-width: 320px) {
+  .quote-title {
     padding: 10px;
-    top: 60%;
-    left: 60%;
-    transform: translate(-60%, -60%);
+    padding-top: 15px;
   }
-
+  .quote-container {
+    margin-top: 40px;
+    width: 30%;
+    padding: 0px;
+  }
+  .quote-content {
+    font-size: 18px;
+  }
   .btn {
-    width: 60%;
-    font-size: 14px;
+    width: 80%;
+    margin-top: 20px;
   }
 }
